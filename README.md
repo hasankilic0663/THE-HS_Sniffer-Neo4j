@@ -1,4 +1,4 @@
-# Sniffer
+# THEIHS
 
 Simple sniffer using Scapy and PyQt5 on Windows.
 
