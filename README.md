@@ -93,11 +93,11 @@ After reassembling the TCP packet, next move is to show you the whole informatio
 
 - sample of sniffing username and password from HTTP Request(POST):
 
-![Sample](/sample_pic/stole_sample.gif "HTTP Request")
+
 
 - sample of preview images from HTTP Response:
 
-![Sample](/sample_pic/preview_sample.gif "HTTP Response")
+
 
 ### Search bar makes things easier
 
