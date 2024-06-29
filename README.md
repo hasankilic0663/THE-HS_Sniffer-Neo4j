@@ -1,6 +1,60 @@
 THEIHS SNIFFER
 # Sniffer
 
+Windows üzerinde Scapy ve PyQt5 kullanarak basit bir ağ koklayıcı.
+
+![Örnek](/sample_pic/overall_sample.gif "Örnek")
+
+<!-- TOC -->
+
+- [Sniffer](#sniffer)
+    - [Başlarken](#başlarken)
+        - [Gereksinimler](#gereksinimler)
+        - [Opsiyonel](#opsiyonel)
+    - [Kullanım](#kullanım)
+    - [Özellikler](#özellikler)
+        - [Ağ arabirimleri, Protokol, Kaynak, Hedef, Kaynak Portu ve Hedef Portu filtreleme.](#ağ-arabirimleri-protokol-kaynak-hedef-kaynak-portu-ve-hedef-portu-filtreleme)
+        - [Seçili paket bilgilerini dosyalara kaydetme ve hatta panoya kopyalama.](#seçili-paket-bilgilerini-dosyalara-kaydetme-ve-hatta-panoya-kopyalama)
+        - [TCP/IP yeniden birleştirme ve dosyalara kaydetme.](#tcpip-yeniden-birleştirme-ve-dosyalara-kaydetme)
+        - [HTTP İstek/Cevap bilgileri](#http-istekcevap-bilgileri)
+        - [Arama çubuğu işleri kolaylaştırır](#arama-çubuğu-i̇şleri-kolaylaştırır)
+        - [OC Modu](#oc-modu)
+        - [Ağ Hızı](#ağ-hızı)
+        - [WireShark benzeri Renk Teması](#wireshark-benzeri-renk-teması)
+        - [(Opsiyonel) Fare geçtiğinde kısa ve etkili bilgi.](#opsiyonel-fare-geçtiğinde-kısa-ve-etkili-bilgi)
+    - [Yapılacaklar](#yapılacaklar)
+
+<!-- /TOC -->
+
+## Başlarken
+
+Hepsini indirin ve main.py dosyasını çalıştırın.
+
+### Gereksinimler
+
+- **Windows 10**
+- Python 3.6
+- Çoklu işleme amacıyla kullanılan modifiye edilmiş [scapy3k](https://github.com/phaethon/scapy). Doğrudan buradan kullanın.
+- ANSI ESCAPE Sekansını HTML CSS'ye parse etmek için kullanılan [ansi2html](https://github.com/ralphbean/ansi2html).
+- Sistem seviyesinde alınan paket miktarını tespit etmek ve ağ hızını hesaplamak için kullanılan [psutil](https://github.com/giampaolo/psutil).
+- HTTP Cevabını parse etmek için kullanılan [urllib3](https://github.com/shazow/urllib3).
+- GUI için [PyQt5](https://riverbankcomputing.com/software/pyqt/download5).
+- [Win10Pcap(Önerilen)](http://www.win10pcap.org/) veya bazı paketlerin eksik olmasına neden olabilecek Npcap yüklenmesi gerekiyor.
+Yalnızca Windows kullanıcıları için test edilmiş ve modifiye edilmiştir.
+
+### Opsiyonel
+
+- Ham paketlerden kısa bilgi parse etmek için kullanılan [pyshark](https://github.com/KimiNewt/pyshark).
+
+   - İpuçları:
+
+      Ancak, en son sürüm Win10'da iyi çalışmıyor, bu yüzden kısa ve etkili bilgiye ihtiyaç duyuyorsanız 0.3.6.2 sürümü kullanılmalı ve önerilmektedir.
+
+## Kullanım
+
+THEIHS SNIFFER
+# Sniffer
+
 Simple sniffer using Scapy and PyQt5 on Windows.
 
 ![Sample](/sample_pic/overall_sample.gif "Sample")
@@ -10,7 +64,7 @@ Simple sniffer using Scapy and PyQt5 on Windows.
 - [Sniffer](#sniffer)
     - [Getting Started](#getting-started)
         - [Prerequisites](#prerequisites)
-        - [Optional](#optionals)
+        - [Optional](#optional)
     - [Usage](#usage)
     - [Feature](#feature)
         - [Filter on Network interfaces, Protocol, Src, Dst, Sport and Dport.](#filter-on-network-interfaces-protocol-src-dst-sport-and-dport)
