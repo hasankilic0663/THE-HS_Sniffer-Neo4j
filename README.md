@@ -10,7 +10,7 @@ Simple sniffer using Scapy and PyQt5 on Windows.
 - [Sniffer](#sniffer)
     - [Getting Started](#getting-started)
         - [Prerequisites](#prerequisites)
-        - [Optional](#optional)
+        - [Optional](#optionals)
     - [Usage](#usage)
     - [Feature](#feature)
         - [Filter on Network interfaces, Protocol, Src, Dst, Sport and Dport.](#filter-on-network-interfaces-protocol-src-dst-sport-and-dport)
