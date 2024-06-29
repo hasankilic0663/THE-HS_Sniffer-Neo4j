@@ -71,7 +71,6 @@ Choose the filter anytime you like and then click the start button twice to cont
 Select one packet, or multiple packets. After using right clicks, you can save them into a txt file with readable format, or even copy
 them into your clipboard(short-cut keys Ctrl-S,Ctrl-C).
 
-![Sample](/sample_pic/save_sample.gif "Sample")
 
 ### TCP/IP reassembly and save them to files.
 
@@ -82,9 +81,7 @@ After that processing, you are welcome to click the `Reassembly` button below on
 Only tested in FTP Transmission, HTML reassembly and ICMP(ping), and the file size can be up to 15MB (might take certain time processing to GUI).
 New feature is added to show the whole size number after reassembly to have a quick peak of the whole process.
 
-- sample of TCP/IP file saving Result:
 
-![Sample](/sample_pic/reassemble_sample.gif "Sample")
 
 
 ### HTTP Request/Response information
@@ -138,7 +135,7 @@ ADD Mouse entering and leaving event for each row makes the UI more colorful and
 Thanks to the API of `pyshark`, the real information that contains a lot of useful details can be feeded whenever your mouse passes on. Remember it's only activated when `pyshark(version 0.3.6.2)` is installed and the current mode is `STOP`.
 
 
-![Sample](/sample_pic/pyshark_sample.gif "Sample")
+
 
 ## To Do
 -  Find a way less CPU consuming that can capture almost all packets instead of a dedicated process on it.
